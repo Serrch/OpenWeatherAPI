@@ -1,0 +1,167 @@
+
+.body-background{
+    background-color: #F4F4F8;
+}
+
+.text-color-n{
+    color: #F4F4F8;
+}
+
+.nav-back-color{
+    background-color: #216869;
+    /*background-color: #49A078; */
+}
+
+/* Barra nav */
+.a-nav{
+    text-decoration: none;
+    font-size:145%;
+    color: #1F2421;
+    padding: 5px;
+    border: 1px solid transparent;
+    transition: transform .3s ease-out 0s;
+    transition:0.5s;
+}
+
+
+.a-nav:hover{
+    /*color:#FC7A7A;*/
+    border-bottom-color: #F4F4F8;
+    transform: scale(1.2);
+    display: inline-block;
+}
+
+#a-nav-titulo{
+    text-decoration: none;
+    font-size:145%;
+    color: #F4F4F8;
+    padding: 5px;
+    border: 1px solid transparent;
+    transition: transform .3s ease-out 0s;
+    transition:0.5s;
+}
+
+.logo-efecto{
+    transition: transform .3s ease-out 0s;
+    transition:0.5s;
+}
+
+.logo-efecto:hover{
+    transform: scale(1.2);
+    filter: brightness(1.1);
+}
+
+.img-logo{
+    width: 25%;
+    height: auto;
+    /*transition: transform .3s ease-out 0s;
+    transition:0.5s;*/
+}
+
+
+/* Banner */
+
+.bg-banner{
+    opacity: 0.5;
+}
+
+.bg-img-banner{
+    background-color:#1F2421
+}
+.banner {
+    position: relative;
+    background-size: cover;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    z-index: 1;
+}
+
+.banner .col-lg-6 {
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 767.89px){
+    .card .img-fit{
+    aspect-ratio: 1.45/1;
+    }
+}
+.carousel-inner img {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+}
+
+  /* CARDS INFO */
+  card {
+    width: 20%;
+    height: auto;
+    background: white;
+    border-radius: 10%;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   }
+   
+   .shadow {
+    box-shadow: inset 0 -3em 3em #1F2421,
+                0 0  0 2px rgb(190, 190, 190),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+   }
+
+
+.img-ico{
+    width: 50%;
+    height: auto;
+}
+
+.img-ico-ciudades{
+    width: 50%;
+    height: auto;
+}
+
+
+/* MODAL */
+
+
+.modal-Contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top:0;
+    left: 50vh;
+    height: 100vh;
+    width: 100vh;
+}
+
+.pModal{
+    background-color: #F4F4F8;
+    width: 60%;
+    height: auto;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.show{
+    pointer-events: auto;
+    opacity: 1;
+    z-index: 2;
+}
+
+.hot-city-container {
+    max-height: 200px; /* Limita la altura máxima */
+    min-height: 150px; /* Define una altura mínima */
+    overflow-y: auto;  /* Permite desplazamiento vertical si el contenido excede */
+    width: auto;       /* Deja que el ancho crezca automáticamente */
+}
